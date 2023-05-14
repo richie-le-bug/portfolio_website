@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+html,body {
+    background-color: #fff;
+}
+
+.top-bar {
+    width: 80%;
+}
+
+.top-bar p {
+    text-align: center;
+    display: inline-block;
+    margin: 1rem;
+    font-size: 1.5rem;
+}
+
+section {
+    display: flex;
+    position: relative;
+    width: 100%;
+    justify-content: right;
+    font-size: 1.5rem;
+}
+
+.accordian_container {
+    position: relative;
+    width: 20%;
+    margin: 2rem;
+}
+
+.accordian-btn {
+    width: 100%;
+    background-color: #fff;
+    cursor: pointer;
+    padding: 1rem 0;
+    outline: none;
+    font-size: 1.5rem;
+}
+
+.panel {
+    text-align: center;
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: max-height .2s ease-out, opacity 2s;
+}
+
+.panel.active {
+    opacity: 1;
+    background-color: #d3d3d3;
+}
+
+h1 {
+    font-size: 5.4rem;
+}
+
+.name {
+    text-align: right;
+}
