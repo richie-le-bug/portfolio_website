@@ -9,33 +9,43 @@ html,body {
     background-color: #fff;
 }
 
+.grid-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 5rem 13rem 30rem;
+    margin: 1rem;
+}
+
 .top-bar {
-    width: 80%;
+    display: inline-block;
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
 }
 
 .top-bar p {
     text-align: center;
     display: inline-block;
     margin: 1rem;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
 }
 
-section {
+.contact-section {
     display: flex;
     position: relative;
     width: 100%;
     justify-content: right;
     font-size: 1.5rem;
+    grid-column: 3 / 4;
+    grid-row: 1 / 3;
 }
 
 .accordian_container {
     position: relative;
-    width: 20%;
-    margin: 2rem;
+    margin-right: 0.5rem;
 }
 
 .accordian-btn {
-    width: 100%;
+    width: 13.2rem;
     background-color: #fff;
     cursor: pointer;
     padding: 1rem 0;
@@ -48,18 +58,37 @@ section {
     max-height: 0;
     overflow: hidden;
     opacity: 0;
-    transition: max-height .2s ease-out, opacity 2s;
+    transition: max-height .3s ease-out, opacity 2s;
 }
 
 .panel.active {
+    width: 13.2rem;
+    height: 14rem;
     opacity: 1;
-    background-color: #d3d3d3;
+    background-color: #fff;
+    border: solid #000000;
+}
+
+.panel.active a {
+    color: #000000;
+    text-decoration: none;
 }
 
 h1 {
     font-size: 5.4rem;
 }
 
-.name {
-    text-align: right;
+.header-1 {
+    text-align: left;
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
 }
+
+.header-2 {
+    text-align: right;
+    padding-top: 18rem;
+    grid-column: 2 / 4;
+    grid-row: 3 / 4;
+    
+}
+
